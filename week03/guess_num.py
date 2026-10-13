@@ -1,7 +1,8 @@
 from secret_number import secretNum
 
 
-while True: 
+for i in range(5):
+    
     x = float(input("ENTER X to guess the secret number"))
 
     if x < secretNum :
@@ -10,10 +11,17 @@ while True:
 
     elif x > secretNum :
 
-        print("guess is too high")
+        print("guess is high")
 
     elif x == secretNum :
         print(secretNum)
         break
+else:
+
+    while True:
+        print ("error: all five chances are wrong!")
         
+
+
+   
  
