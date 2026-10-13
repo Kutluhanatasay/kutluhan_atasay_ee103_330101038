@@ -1,17 +1,19 @@
 from secret_number import secretNum
 
 
-x = float(input("ENTER X to guess the secret number"))
+while True: 
+    x = float(input("ENTER X to guess the secret number"))
 
-if x < secretNum :
+    if x < secretNum :
 
-    print("guess is low")
+        print("guess is low")
 
-elif x > secretNum :
+    elif x > secretNum :
 
-    print("guess is too high")
+        print("guess is too high")
 
-elif x == secretNum :
-
-    print(secretNum) 
-
+    elif x == secretNum :
+        print(secretNum)
+        break
+        
+ 
