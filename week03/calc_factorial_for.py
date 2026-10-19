@@ -1,12 +1,15 @@
-# calc_factorial_for.py
-# EE103 Week 3 - Part 5: Factorial using a FOR loop
+# week03 Task 5.1
 
-num = int(input("Enter a number to calculate its factorial: "))
+n = int(input("enter integer number to calculate its factorial"))
+k = int(1)
 
-if num < 0:
-    print("Factorial is not defined for negative numbers.")
+if n == 0:
+    print("1")
 else:
-    factorial = 1
-    for i in range(1, num + 1):
-        factorial *= i
-    print(f"Factorial of {num} is: {factorial}")
+    for i in range(1, n):
+        n = n * i
+
+    print(n)
+    
+
+

@@ -20,8 +20,3 @@ else:
 
     while True:
         print ("error: all five chances are wrong!")
-        
-
-
-   
- 

@@ -1,14 +1,15 @@
-# calc_factorial_while.py
-# EE103 Week 3 - Part 5: Factorial using a WHILE loop
+# week03 Task 5.2
 
-num = int(input("Enter a number to calculate its factorial: "))
-
-if num < 0:
-    print("Factorial is not defined for negative numbers.")
+n = int(input("enter integer number to calculate its factorial"))
+i = int(1)
+F = int(n)
+if n == 0:
+    print("1")
 else:
-    factorial = 1
-    current = num
-    while current > 1:
-        factorial *= current
-        current -= 1
-    print(f"Factorial of {num} is: {factorial}")
+    while n > 1:
+        F = F * (n - 1)
+        n = (n - 1)
+
+    print(F) 
+
+
